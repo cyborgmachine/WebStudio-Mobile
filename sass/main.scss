@@ -1,0 +1,27 @@
+// Base
+@import "./base/mixins";
+@import "./base/variables";
+@import "./base/common";
+@import "./base/header";
+
+// Index
+@import "./components/index/main-section";
+@import "./components/index/adv-section";
+@import "./components/index/whatwedo-section";
+@import "./components/index/team-section";
+@import "./components/index/company-section";
+//Portfolio
+@import "./components/portfolio/portfolio";
+//Footer
+@import "./components/footer/sub-footer";
+@import "./components/footer/join-footer";
+@import "./components/footer/footer";
+// Modal
+@import "./utils/modal";
+// Buttons 
+@import "./components/buttons/footer-btn";
+@import "./components/buttons/portfolio-btns";
+@import "./components/buttons/studio-btn";
+
+  
+  

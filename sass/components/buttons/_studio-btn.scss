@@ -1,0 +1,26 @@
+// Studio Button 
+  .main-button {
+    @include font(16px, 700, 1.9, 0.06em);
+
+    font-family: inherit;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    color: var(--whole-white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover {
+    background-color: var(--focus-color);
+    color: var(--whole-white-color);
+  }
+  
+  & a:focus {
+    color: var(--focus-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

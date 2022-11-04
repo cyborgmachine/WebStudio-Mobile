@@ -899,7 +899,7 @@ ul {
     margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .join-box {
     margin-left: 165px;
     margin-bottom: 60px;

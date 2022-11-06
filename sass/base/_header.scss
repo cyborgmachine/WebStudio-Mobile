@@ -8,6 +8,7 @@
 
     color: var(--primary-color);
     font-family: "Raleway", sans-serif;
+  
     text-decoration: none;
   }
  
@@ -210,11 +211,9 @@
   
   .navigation-button {
     padding-right: 0;
-    
     background-color: transparent;
     cursor: pointer;
     border: none;
-    border-radius: 50%;
     outline: none;
   }
   @media (min-width: 768px) {

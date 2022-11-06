@@ -29,6 +29,17 @@
             <li class="header-item"><a href="./portfolio.html" class="header-link">Портфоліо</a></li>
             <li class="header-item"><a href="#" class="header-link">Контакти</a></li>
             </ul>
+
+            <!--Mob Menu-->
+            <button type="button" aria-expanded="false" aria-controls="mobile-menu"
+            class="navigation-button js-open-menu">
+              <svg class="mob-svg" viewBox="0 0 24 16" width="24" height="16">
+                <use href="./img/header/mobile-menu.svg#menu">
+                </use>
+              </svg>
+           </button>
+
+
            </nav>
   
         <!-- Contacts-->
@@ -51,6 +62,8 @@
         </li>
         </ul>
       </div>
+
+       
         </header>
       
     <main>
@@ -587,9 +600,97 @@
     </div>
   </div>
 
-  <script src="./js/modal.js"></script>
+
 <!--Modal Window End-->
 
 
+<!--Mobile-->
+
+
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-container-button js-close-menu">
+    <svg width="40px" height="40px">
+      <use href="./img/header/mobile-menu.svg#mobileX"></use>
+    </svg>
+  </button>
+  <div class="mobile">
+    <ul class="mobile-list">
+      <li class="mobile-item">
+        <a href="./index.html" class="mobile-link current">Студія</a>
+      </li>
+      <li class="mobile-item">
+        <a href="./portfolio.html" class="mobile-link">Портфоліо</a>
+      </li>
+      <li class="mobile-item">
+        <a href="#" class="mobile-link">Контакти</a>
+      </li>
+    </ul>
+
+
+    <ul class="mobile-sheets">
+      <li class="mobile-contact">
+        <a
+          href="tel:+380961111111"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          class="mobile-link-social"
+        >
+          +38 096 111 11 11</a
+        >
+      </li>
+      <li class="mobile-contact">
+        <a
+          href="mailto:info@devstudio.com"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          class="mobile-link-social mail"
+        >
+          info@devstudio.com</a
+        >
+      </li>
+    </ul>
+
+
+
+    <ul class="mobile-social">
+      <li class="mobile-tags">
+        <a
+          href=""
+          class="mobile-goods"
+          rel="noopener noreferrer nofollow"
+          >Instagram</a
+        >
+        <span class="mobile-border"></span>
+      </li>
+      <li class="mobile-tags">
+        <a
+          href=""
+          class="mobile-goods"
+          rel="noopener noreferrer nofollow"
+          >Twitter</a
+        >
+        <span class="mobile-border"></span>
+      </li>
+      <li class="mobile-tags">
+        <a
+          href=""
+          class="mobile-goods"
+          rel="noopener noreferrer nofollow"
+          >Facebook</a
+        >
+        <span class="mobile-border"></span>
+      </li>
+      <li class="mobile-tags">
+        <a href="" class="mobile-goods" rel="noopener noreferrer nofollow">LinkedIn</a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
   </body>
 </html>

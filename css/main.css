@@ -65,11 +65,12 @@ ul {
     margin-right: auto;
   }
 }
-.container.rulles {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .container.rulles {
+    display: flex;
+    align-items: center;
+  }
 }
-
 .current {
   color: var(--primary-color);
   position: relative;
@@ -113,10 +114,6 @@ ul {
   display: flex;
   gap: 50px;
   list-style-type: none;
-}
-.header-nav {
-  display: flex;
-  align-items: center;
 }
 .header-color {
   font-size: 26px;
@@ -187,9 +184,10 @@ ul {
   color: var(--focus-color);
 }
 
-@media screen and (min-width: 320px) {
-  .header-logo {
-    margin-right: 234px;
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {

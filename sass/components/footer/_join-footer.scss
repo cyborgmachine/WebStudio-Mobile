@@ -75,15 +75,15 @@ flex-direction: column;
     margin-bottom: 60px;
       }
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 768px) {
         .join-box {
-       margin-left: 165px;
+      margin-left: 165px;
       margin-bottom: 60px;
         }
         }
-        @media screen and (min-width: 1200) {
+        @media screen and (min-width: 1200px) {
           .join-box {
-         
+            margin: auto;
           }
           }
 

@@ -248,6 +248,10 @@ ul {
     display: none;
   }
 }
+.mob-svg:hover {
+  fill: var(--focus-color);
+}
+
 .mobile-header {
   display: flex;
   justify-content: space-between;
@@ -935,6 +939,11 @@ ul {
   .portfolio-content {
     list-style: none;
     max-width: 370px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio-photo {
+    width: 100%;
   }
 }
 .sub-input:focus {

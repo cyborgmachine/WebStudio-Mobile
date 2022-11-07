@@ -180,7 +180,9 @@
   display: none;
   }
   }
-
+  .mob-svg:hover{
+    fill: var(--focus-color);
+  }
   .mobile-header {
     display: flex;
     justify-content: space-between;

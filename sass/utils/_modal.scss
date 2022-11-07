@@ -183,6 +183,8 @@
   
   @media screen and (min-width: 100px){
     .modal {
+      height: auto;
+min-width: 90%;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -300,7 +302,19 @@ resize: none;
                           }
                         }
 
-            @media screen and (max-width: 767px){
+             @media screen and (min-width: 100px){
+            .modal-article {
+              @include font(20px, 700, 1.2, 0.03em);
+            
+                margin-bottom: 5px;
+                margin-top: 5px;
+                text-align: center;
+                color: var(--item-color);
+                font-family: "Roboto";
+                font-style: normal;
+              }
+            }                       
+            @media screen and (min-width: 468px){
             .modal-article {
               @include font(20px, 700, 1.2, 0.03em);
             

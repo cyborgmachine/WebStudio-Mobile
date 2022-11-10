@@ -40,20 +40,15 @@ ul {
 }
 
 .container {
-  max-width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -76,17 +71,18 @@ ul {
   position: relative;
 }
 
-.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--primary-color);
+@media screen and (min-width: 768px) {
+  .current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+  }
 }
-
 .header-link.current {
   color: var(--primary-color);
 }
@@ -408,7 +404,6 @@ ul {
   background-color: var(--mainsection-clor);
   color: var(--whole-white-color);
   text-align: center;
-  max-width: 480px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -857,6 +852,7 @@ ul {
   flex-wrap: wrap;
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 .portfolio-content:nth-child(3n) {
   margin-right: 0;
@@ -917,7 +913,7 @@ ul {
   transition: transform 1000ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1192,14 +1188,6 @@ ul {
   .footer-list {
     font-style: normal;
     list-style: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    max-width: 480px;
   }
 }
 /* Modal Window */
@@ -1646,8 +1634,6 @@ ul {
     flex-wrap: wrap;
     margin-bottom: 40px;
     justify-content: flex-start;
-    margin-right: -16px;
-    margin-left: -8px;
   }
 }
 @media screen and (max-width: 767px) {

@@ -23,9 +23,7 @@ body {
   }
 
   .container {
-    max-width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -33,11 +31,8 @@ body {
   
   @media screen and (min-width: 768px) {
     .container {
-      max-width: 768px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin-left: auto;
-      margin-right: auto;
+justify-content: center;
+padding: 0 15px;
  
     }
   }
@@ -60,6 +55,8 @@ body {
     color: var(--primary-color);
     position: relative;
   }
+
+  @media screen and (min-width: 768px) {
   .current::after {
     content: "";
     position: absolute;
@@ -70,6 +67,7 @@ body {
     border-radius: 2px;
     background-color: var(--primary-color);
   }
+}
 
   .header-link.current {
     color: var(--primary-color);

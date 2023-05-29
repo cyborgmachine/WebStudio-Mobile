@@ -4,12 +4,10 @@
   }
 }
 
-
 @media screen and (min-width: 1200px){
 .whatwedo{
     margin: 0 auto;
     padding-bottom: 94px;
-  
     &-list {
     display: flex;
     gap: 30px;
@@ -30,7 +28,6 @@
 
   &-title {
     @include font(14px, 700, 1.14, 0.06em);
-
     display: block;
     padding-top: 27px;
     padding-bottom: 27px;
@@ -40,7 +37,6 @@
   }
   &-hero {
     @include font(36px, 700, 1.2, 0.06em);
-
     color: var(--item-color);
     text-align: center;
     margin-bottom: 50px;

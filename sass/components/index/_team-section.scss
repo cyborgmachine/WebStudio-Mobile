@@ -1,8 +1,5 @@
 .team {
-    background-color: var(--hero-bck-color);
-   
-    
-    
+  background-color: var(--hero-bck-color);
   &-item {
     text-decoration: none;
     list-style: none;
@@ -11,17 +8,12 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-
-  
-  
   &-name {
     @include font(16px, 500, 1.2, 0.03em);
-    
     color: var(--item-color);
     text-align: center;
     margin-bottom: 10px;
   }
-
   &-job {
     line-height: 1.2;
     color: var(--secondary-color);
@@ -29,10 +21,12 @@
     padding-bottom: 30px;
     font-size: 16px;
   }
+
   &-card {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   &-contacts {
     list-style: none;
     text-decoration: none;
@@ -52,14 +46,14 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   &-svg {
     width: 20px;
     height: 20px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   &-link:hover,
   &-link:focus {
     background-color: var(--primary-color);
@@ -76,15 +70,16 @@
     flex-direction: column;
     align-items: center;
   }
-  }
-@media screen and (min-width: 768px) {
-.team-list {
-  text-decoration: none;
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    text-decoration: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -94,23 +89,21 @@
     gap: 30px;
     flex-direction: row;
   }
-  }
+}
 
-  @media screen and (min-width: 200px) {
-    .team-title {
-      @include font(28px, 700, 1.2, 0.03em);
-  
-      color: var(--item-color);
-      text-decoration: none;
-      text-align: center;
-      margin-bottom: 30px;
-    }
+@media screen and (min-width: 200px) {
+  .team-title {
+    @include font(28px, 700, 1.2, 0.03em);
+    color: var(--item-color);
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 30px;
   }
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .team-title {
     @include font(36px, 700, 1.2, 0.06em);
-
     color: var(--item-color);
     text-decoration: none;
     text-align: center;
@@ -121,19 +114,18 @@
 
 @media screen and (min-width: 200px) {
   .team-photo {
-  width: 100%;
- 
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .team-photo {
-   width: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-photo {
-   max-width: 270px;
+    max-width: 270px;
   }
 }

@@ -1,0 +1,338 @@
+.header {
+  border-bottom: 1px solid var(--solid);
+
+  &-logo {
+    @include font(26px, 700, 1.2, 0.03em);
+    color: var(--primary-color);
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+  }
+
+  &-item {
+    @include font(14px, 500, 1.1, 0.03em);
+  }
+
+  &-list-nav {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+  }
+
+
+  &-color {
+    @include font(26px, 700, 1.192, 0.03em);
+
+    color: var(--simple-color);
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+  }
+
+  &-link {
+    @include font(14px, 500, 1.1, 0.02em);
+    display: block;
+    padding: 32px 0;
+    color: var(--item-color);
+    text-decoration: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-tel {
+    @include font(14px, 500, 1.142, 0.02em);
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: 1200px) {
+    .header-mal {
+      @include font(14px, 500, 1.142, 0.02em);
+      color: var(--secondary-color);
+      text-decoration: none;
+      align-items: center;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 10px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &-svg {
+    fill: currentColor;
+  }
+
+  &-link:hover {
+    color: var(--primary-color);
+  }
+
+  &-mal:hover {
+    color: var(--primary-color);
+  }
+
+  &-tel:hover {
+    color: var(--primary-color);
+  }
+
+  &-link:focus {
+    color: var(--focus-color);
+  }
+
+  &-mal:focus {
+    color: var(--focus-color);
+  }
+
+  &-tel:focus {
+    color: var(--focus-color);
+  }
+}
+
+// Media width 
+// @media screen and (min-width: 1200px){
+// }
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+
+    margin-right: 88px;
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    margin-right: 93px;
+  }
+}
+
+
+@media screen and (min-width: 100px) {
+  .header-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 90px
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-left: auto;
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-list-nav {
+    display: none;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .header-mal {
+    margin-bottom: 10px;
+    @include font(14px, 500, 1.142, 0.02em);
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mob-svg {}
+}
+
+@media screen and (min-width: 768px) {
+  .mob-svg {
+    display: none;
+  }
+}
+
+.mob-svg:hover {
+  fill: var(--focus-color);
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+
+  .header-list-nav,
+  .header-list {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  background-color: var(--primary-white-color);
+  z-index: 999;
+  transform: translateX(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.navigation-button {
+  padding-right: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .navigation-button {
+    display: none;
+  }
+}
+
+.navigation-button:hover,
+.navigation-button:focus {
+  fill: var(--primary-color);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  background-color: var(--whole-white-color);
+  z-index: 999;
+  transform: translateX(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.menu-container-button:hover,
+.menu-container-button:focus {
+  fill: var(--primary-color);
+}
+
+.mobile-list {
+  list-style: none;
+  margin-bottom: 80px;
+}
+
+.mobile-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-link {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--item-color);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-link.current {
+  color: var(--primary-color);
+}
+
+.mobile-sheets {
+  list-style: none;
+  margin-bottom: 64px;
+}
+
+.mobile-contact {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.mobile-contact:last-child {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-top: 32px;
+}
+
+.mobile-link-social {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--primary-color);
+}
+
+.mail {
+  color: var(--item-color);
+}
+
+.mobile-social {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-border {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+}
+
+.mobile-tags {
+  display: flex;
+  gap: 10px;
+}
+
+.mobile-goods {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--primary-color);
+}

@@ -1,0 +1,76 @@
+.main {
+  background-color: var(--mainsection-clor);
+  color: var(--whole-white-color);
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background/bckgr-480-2x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .main {
+    background-image: linear-gradient(hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)),
+      url(../img/background/bckgr-480-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    max-width: 768px;
+    background-image: linear-gradient(hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)),
+      url(../img/background/bckgr-768-1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .main {
+    background-image: linear-gradient(hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)),
+      url(../img/background/bckgr-768-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)),
+      url(../img/background/bckgr-1600-1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .main {
+    background-image: linear-gradient(hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)),
+      url(../img/background/bckgr-1600-2x.jpg);
+  }
+}
+
+.main-title {
+  text-transform: uppercase;
+  text-align: center;
+  @include font (26px, 900, 1.9, 0.06em);
+
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    @include font (44px, 900, 1.4, 0.06em);
+  }
+}

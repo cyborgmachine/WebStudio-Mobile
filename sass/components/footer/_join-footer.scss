@@ -1,0 +1,106 @@
+//Footer Join Box
+
+
+.join {
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+  }
+
+  &-item {
+    margin-right: 10px;
+  }
+
+  &-item:last-child {
+    margin-right: 0;
+  }
+
+  &-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: var(--whole-white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-link:hover,
+  &-link:focus {
+    background-color: var(--primary-color);
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .join {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .join {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .join-box {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-box {
+    margin-left: 165px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-box {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .join-text {
+    @include font(14px, 700, 1.14, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--whole-white-color);
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-text {
+    @include font(14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--whole-white-color);
+    margin-bottom: 20px;
+  }
+}

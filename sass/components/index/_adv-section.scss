@@ -1,0 +1,125 @@
+@media screen and (min-width: 200px) {
+  .adv {
+    padding-top: 60px;
+    padding-bottom: 128px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adv {
+    padding-top: 94px;
+    padding-bottom: 188px;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .adv-list {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 auto;
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adv-list {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 auto;
+    flex-basis: calc((100% - 60px)/2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adv-list {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .adv-descr {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adv-descr {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adv-descr {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+}
+
+
+@media screen and (min-width: 200px) {
+  .adv-our {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+    max-width: 450px;
+    height: 120px;
+    background-color: var(--hero-bck-color);
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adv-our {
+    text-align: center;
+    display: flex;
+    margin-bottom: 30px;
+    max-width: 354px;
+    height: 120px;
+    background-color: var(--hero-bck-color);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adv-our {
+    text-align: center;
+    display: flex;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--hero-bck-color);
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media screen and (min-width: 200px) {
+  .adv-item {
+    @include font(14px, 700, 1.1, 0.03em);
+    text-align: center;
+    color: var(--item-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adv-item {
+    @include font(14px, 700, 1.1, 0.03em);
+    text-align: start;
+    color: var(--item-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}

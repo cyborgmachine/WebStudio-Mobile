@@ -1,0 +1,132 @@
+.team {
+  background-color: var(--hero-bck-color);
+  padding: 94px 0;
+  &-item {
+    text-decoration: none;
+    list-style: none;
+    background: var(--whole-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &-name {
+    @include font(16px, 500, 1.2, 0.03em);
+    color: var(--item-color);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &-job {
+    line-height: 1.2;
+    color: var(--secondary-color);
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 16px;
+  }
+
+  &-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &-contacts {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: #afb1b8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-svg {
+    width: 20px;
+    height: 20px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-link:hover,
+  &-link:focus {
+    background-color: var(--primary-color);
+    fill: var(--whole-white-color);
+  }
+}
+
+
+@media screen and (min-width: 200px) {
+  .team-list {
+    text-decoration: none;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    text-decoration: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    text-decoration: none;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .team-title {
+    @include font(28px, 700, 1.2, 0.03em);
+    color: var(--item-color);
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-title {
+    @include font(36px, 700, 1.2, 0.06em);
+    color: var(--item-color);
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+
+@media screen and (min-width: 200px) {
+  .team-photo {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-photo {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-photo {
+    max-width: 270px;
+  }
+}

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container rulles">
+      <!--Nav menu-->
+      <nav class="header-nav">
+        <div class="mobile-header">
+          <a href="./index.html" class="header-logo">Web<span class="header-color">Studio</span></a>
+          <!--Mob Menu-->
+          <button type="button" aria-expanded="false" aria-controls="mobile-menu"
+            class="navigation-button js-open-menu">
+            <svg class="mob-svg" viewBox="0 0 24 16" width="24" height="16">
+              <use href="./img/header/mobile-menu.svg#menu">
+              </use>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="header-list-nav">
+          <li class="header-item"><a href="./index.html" class="header-link">Студія</a></li>
+          <li class="header-item"><a href="./portfolio.html" class="header-link current">Портфоліо</a></li>
+          <li class="header-item"><a href="#" class="header-link">Контакти</a></li>
+        </ul>
+      </nav>
+      <!-- Contacts-->
+
+      <ul class="header-list">
+
+        <li class="header-contact">
+
+          <a href="mailto:info@devstudio.com" class="header-mal">info@devstudio.com
+            <svg class="header-svg" viewBox="0 0 43 32" width="16" height="12">
+              <use href="./img/sprite.svg#mail"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-contact">
+          <a href="tel:+380961111111" class="header-tel">+38 096 111 11 11
+            <svg class="header-svg" viewBox="0 0 20 32" width="10" height="16">
+              <use href="./img/sprite.svg#smartphone"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!--Main-->
+  <main>
+    <section class="portfolio">
+      <div class="container">
+        <h1 hidden>Приклади</h1>
+
+        <ul class="buttonp-group">
+          <li class="buttonp">
+            <button id="btnall" type="button" class="buttonp-main" >Усі</button>
+          </li>
+          <li class="buttonp">
+            <button id="btnsite" type="button" class="buttonp-main">Веб-сайти</button>
+          </li>
+          <li class="buttonp">
+            <button id="btnapps" type="button" class="buttonp-main" >Додатки</button>
+          </li>
+          <li class="buttonp">
+            <button id="btndesign" type="button" class="buttonp-main" >Дизайн</button>
+          </li>
+          <li class="buttonp">
+            <button id="btnmarketing" type="button" class="buttonp-main" >Маркетинг</button>
+          </li>
+        </ul>
+
+        <!--Images Main section -->
+
+        <ul class="portfolio-first">
+          <!--Image 1-->
+
+          <li id="webcat1" class="portfolio-content web">
+            <a href="./index.html" class="portfolio-link">
+              <div class="overlay_gal">
+                <picture>
+                  <source srcset="./img/portfolio/450px-mobile/img.jpg" media="(max-width:767px)" />
+                  <source srcset="./img/portfolio/354px-tablet/img.jpg" media="(max-width:1199px)" />
+                  <img class="portfolio-photo" src="./img/portfolio/img1.jpg" alt="робимо верстку сайтів" />
+                </picture>
+                <p class="overlay_text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу
+                  отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-item">Технокряк</h2>
+                <p class="portfolio-cat">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+
+          <!--Image 2-->
+          <li id="designcat1" class="portfolio-content design">
+            <a href="./index.html" class="portfolio-link">
+              <div class="overlay_gal">
+                <picture>
+                  <source srcset="./img/portfolio/450px-mobile/img1.jpg" media="(max-width:767px)" />
+                  <source srcset="./img/portfolio/354px-tablet/img1.jpg" media="(max-width:1199px)" />
+                  <img class="portfolio-photo" src="./img/portfolio/img2.jpg" alt="Малюнки" />
+                </picture>
+                <p class="overlay_text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Accusamus, magnam reprehenderit possimus impedit voluptates
+                  cum nobis, laborum quis temporibus vitae, quo quaerat in
+                  cumque tempora ipsa? Eos eligendi veritatis dolorum.
+                </p>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-item">
+                  Постер <span lang="en">Orlean vs Golden Star</span>
+                </h2>
+                <p class="portfolio-cat">Дизайн</p>
+              </div>
+            </a>
+          </li>
+
+          <!--Image 3-->
+
+          <li id="appcat1" class="portfolio-content app">
+            <a href="./index.html" class="portfolio-link">
+              <div class="overlay_gal">
+                <picture>
+                  <source srcset="./img/portfolio/450px-mobile/img2.jpg" media="(max-width:767px)" />
+                  <source srcset="./img/portfolio/354px-tablet/img2.jpg" media="(max-width:1199px)" />
+                  <img class="portfolio-photo" src="./img/portfolio/img3.jpg" alt="додаток" />
+                </picture>
+
+                <p class="overlay_text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Accusamus, magnam reprehenderit possimus impedit voluptates
+                  cum nobis, laborum quis temporibus vitae, quo quaerat in
+                  cumque tempora ipsa? Eos eligendi veritatis dolorum.
+                </p>
+              </div>
+
+              <div class="portfolio-border">
+                <h2 class="portfolio-item">
+                  Ресторан <span lang="en">Seafood</span>
+                </h2>
+                <p class="portfolio-cat">Додаток</p>
+              </div>
+            </a>
+          </li>
+
+          <!--Image 4-->
+
+          <li id="marketcat1" class="portfolio-content market">
+            <a href="./index.html" class="portfolio-link">
+              <div class="overlay_gal">
+                <picture>
+                  <source srcset="./img/portfolio/450px-mobile/img3.jpg" media="(max-width:767px)" />
+                  <source srcset="./img/portfolio/354px-tablet/img3.jpg" media="(max-width:1199px)" />
+                  <img class="portfolio-photo" src="./img/portfolio/img4.jpg" alt="просування" />
+                </picture>
+
+                <p class="overlay_text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Accusamus, magnam reprehenderit possimus impedit voluptates
+                  cum nobis, laborum quis temporibus vitae, quo quaerat in
+                  cumque tempora ipsa? Eos eligendi veritatis dolorum.
+                </p>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-item">
+                  Проект <span lang="en">Prime</span>
+                </h2>
+                <p class="portfolio-cat">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+
+          <!--Image 5-->
+          <li id="appcat2" class="portfolio-content app">
+            <a href="./index.html" class="portfolio-link">
+              <div class="overlay_gal">
+                <picture>
+                  <source srcset="./img/portfolio/450px-mobile/img4.jpg" media="(max-width:767px)" />
+                  <source srcset="./img/portfolio/354px-tablet/img4.jpg" media="(max-width:1199px)" />
+                  <img class="portfolio-photo" src="./img/portfolio/img5.jpg" alt="Маркетинг" />
+                </picture>
+
+                <p class="overlay_text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Accusamus, magnam reprehenderit possimus impedit voluptates
+                  cum nobis, laborum quis temporibus vitae, quo quaerat in
+                  cumque tempora ipsa? Eos eligendi veritatis dolorum.
+                </p>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-item">Проєкт <span lang="en>">Box</span></h2>
+                <p class="portfolio-cat">Додаток</p>
+              </div>
+            </a>
+          </li>
+
+          <!--Image 6-->
+          <li id="webcat2" class="portfolio-content web">
+            <a href="./index.html" class="portfolio-link">
+              <div class="overlay_gal">
+                <picture>
+                  <source srcset="./img/portfolio/450px-mobile/img5.jpg" media="(max-width:767px)" />
+                  <source srcset="./img/portfolio/354px-tablet/img5.jpg" media="(max-width:1199px)" />
+                  <img class="portfolio-photo" src="./img/portfolio/img6.jpg" alt="Сайт" />
+                </picture>
+
+                <p class="overlay_text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Accusamus, magnam reprehenderit possimus impedit voluptates
+                  cum nobis, laborum quis temporibus vitae, quo quaerat in
+                  cumque tempora ipsa? Eos eligendi veritatis dolorum.
+                </p>
+              </div>
+
+              <div class="portfolio-border">
+                <h2 class="portfolio-item">
+                  Inspiration has no Borders
+                </h2>
+                <p class="portfolio-cat">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+
+          <!--Image 7-->
+          <li id="designcat2" class="portfolio-content design">
+            <a href="./index.html" class="portfolio-link">
+              <div class="overlay_gal">
+                <picture>
+                  <source srcset="./img/portfolio/450px-mobile/img6.jpg" media="(max-width:767px)" />
+                  <source srcset="./img/portfolio/354px-tablet/img6.jpg" media="(max-width:1199px)" />
+                  <img class="portfolio-photo" src="./img/portfolio/img7.jpg" alt="Книга" />
+                </picture>
+
+                <p class="overlay_text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Accusamus, magnam reprehenderit possimus impedit voluptates
+                  cum nobis, laborum quis temporibus vitae, quo quaerat in
+                  cumque tempora ipsa? Eos eligendi veritatis dolorum.
+                </p>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-item">
+                  Видання <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="portfolio-cat">Дизайн</p>
+              </div>
+            </a>
+          </li>
+
+          <!--Image 8-->
+          <li id="marketcat2" class="portfolio-content market">
+            <a href="./index.html" class="portfolio-link">
+              <div class="overlay_gal">
+                <picture>
+                  <source srcset="./img/portfolio/450px-mobile/img7.jpg" media="(max-width:767px)" />
+                  <source srcset="./img/portfolio/354px-tablet/img7.jpg" media="(max-width:1199px)" />
+                  <img class="portfolio-photo" src="./img/portfolio/img8.jpg" alt="Проєкт" />
+                </picture>
+
+                <p class="overlay_text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Accusamus, magnam reprehenderit possimus impedit voluptates
+                  cum nobis, laborum quis temporibus vitae, quo quaerat in
+                  cumque tempora ipsa? Eos eligendi veritatis dolorum.
+                </p>
+              </div>
+
+              <div class="portfolio-border">
+                <h2 class="portfolio-item">Проєкт <span lang="en">LAB</span></h2>
+                <p class="portfolio-cat">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+
+          <!--Image 9-->
+          <li id="appcat3" class="portfolio-content app">
+            <a href="./index.html" class="portfolio-link">
+              <div class="overlay_gal">
+                <picture>
+                  <source srcset="./img/portfolio/450px-mobile/img8.jpg" media="(max-width:767px)" />
+                  <source srcset="./img/portfolio/354px-tablet/img8.jpg" media="(max-width:1199px)" />
+                  <img class="portfolio-photo" src="./img/portfolio/img9.jpg" alt="додаток" />
+                </picture>
+
+                <p class="overlay_text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Accusamus, magnam reprehenderit possimus impedit voluptates
+                  cum nobis, laborum quis temporibus vitae, quo quaerat in
+                  cumque tempora ipsa? Eos eligendi veritatis dolorum.
+                </p>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-item">Growing Business</h2>
+                <p class="portfolio-cat">Додаток</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!--Footer-->
+
+
+  <footer class="footer">
+    <div class="container join">
+      <div class="footer-first">
+
+        <a href="./index.html" class="footer-logo"> Web<span class="footer-color">Studio</span></a>
+        <address class="footer-address">
+          <ul class="footer-list">
+            <li class="footer-item bot">
+              <a href="https://goo.gl/maps/juvtHiytcNgh8N4bA" class="footer-link li" target="_blank"
+                rel="noopener norefferer nofollow">м.Київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li class="footer-item bot">
+              <a href="mailto:info@devstudio.com" class="footer-mal li">info@devstudio.com</a>
+            </li>
+            <li class="footer-item">
+              <a href="tel:+380961111111" class="footer-tel">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+
+
+      <!--Footer social links-->
+
+      <div class="join-box">
+        <p class="join-text">Приєднуйтесь</p>
+        <ul class="join-list">
+          <li class="join_item">
+            <a href="" class="join-link"><svg class="svg-link-hero" viewBox="0 0 32 32" width="20">
+                <use href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="join_item">
+            <a href="" class="join-link"><svg class="svg-link-hero" viewBox="0 0 32 32" width="20">
+                <use href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="join_item">
+            <a href="" class="join-link"><svg class="svg-link-hero" viewBox="0 0 32 32" width="20">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="join_item">
+            <a href="" class="join-link"><svg class="svg-link-hero" viewBox="0 0 32 32" width="20">
+                <use href="./img/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="sub">
+
+        <p class="sub-text"> Підпишіться на розсилку</p>
+
+        <label for="mail">
+          <input class="sub-input" type="email" placeholder="E-mail" id="mail">
+        </label>
+
+        <button class="telega-btn">
+
+          <p class="text-telega">Підписатися</p>
+
+          <svg class="telega" width="24" height="24">
+            <use href="./img/telegram.svg#telegram"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div id="google_translate_element" style="display: flex; justify-content: center; margin-top: 40px;"></div>
+  </footer>
+
+  <!--Mobile-->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-container-button js-close-menu">
+      <svg width="19px" height="19px">
+        <use href="./img/header/mobile-menu.svg#mobileX"></use>
+      </svg>
+    </button>
+    <div class="mobile">
+      <ul class="mobile-list">
+        <li class="mobile-item">
+          <a href="./index.html" class="mobile-link">Студія</a>
+        </li>
+        <li class="mobile-item">
+          <a href="./portfolio.html" class="mobile-link current">Портфоліо</a>
+        </li>
+        <li class="mobile-item">
+          <a href="#" class="mobile-link">Контакти</a>
+        </li>
+      </ul>
+
+
+      <ul class="mobile-sheets">
+        <li class="mobile-contact">
+          <a href="tel:+380961111111" target="_blank" rel="noopener noreferrer nofollow" class="mobile-link-social">
+            +38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contact">
+          <a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer nofollow"
+            class="mobile-link-social mail">
+            info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="mobile-tags">
+          <a href="" class="mobile-goods" rel="noopener noreferrer nofollow">Instagram</a>
+          <span class="mobile-border"></span>
+        </li>
+        <li class="mobile-tags">
+          <a href="" class="mobile-goods" rel="noopener noreferrer nofollow">Twitter</a>
+          <span class="mobile-border"></span>
+        </li>
+        <li class="mobile-tags">
+          <a href="" class="mobile-goods" rel="noopener noreferrer nofollow">Facebook</a>
+          <span class="mobile-border"></span>
+        </li>
+        <li class="mobile-tags">
+          <a href="" class="mobile-goods" rel="noopener noreferrer nofollow">LinkedIn</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+<!-- JS Sripts -->
+ 
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/hider.js"></script>
+
+</body>
+
+</html>

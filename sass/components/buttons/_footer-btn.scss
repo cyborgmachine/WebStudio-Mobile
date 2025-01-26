@@ -1,0 +1,61 @@
+// Footer
+.telega {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+
+  &-btn:hover {
+    background-color: var(--focus-color);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .telega-btn {
+    @include font(16px, 700, 1.875, 0.06em);
+    align-items: center;
+    color: var(--whole-white-color);
+    background-color: var(--primary-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 62px;
+    position: relative;
+    width: 200px;
+    font-family: "Roboto";
+    font-style: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .telega-btn {
+    @include font(16px, 700, 1.875, 0.06em);
+    color: var(--whole-white-color);
+    background-color: var(--primary-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 62px;
+    position: relative;
+    max-width: 200px;
+    font-family: "Roboto";
+    font-style: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-left: 12px;
+  }
+}
